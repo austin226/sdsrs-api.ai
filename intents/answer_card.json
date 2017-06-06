@@ -1,0 +1,133 @@
+{
+  "userSays": [
+    {
+      "id": "daddf32a-8985-473e-8a22-b86585c0b8ed",
+      "data": [
+        {
+          "text": "Flip it"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "916bbf96-9a92-420c-b270-24f37ee45009",
+      "data": [
+        {
+          "text": "Flip the card"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c1288f20-2b21-4099-b0c3-daf0a947f8a1",
+      "data": [
+        {
+          "text": "Flip"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "81e35446-1bf0-4763-b46a-38f4a6829f45",
+      "data": [
+        {
+          "text": "What is it?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2021ca2b-a463-47f1-a63b-b770387e3da3",
+      "data": [
+        {
+          "text": "I don\u0027t know the answer"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0476b468-1b2d-4834-99f4-0f1bb446c837",
+      "data": [
+        {
+          "text": "Get the answer"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "319719aa-40aa-4681-8d9c-88776e4960af",
+      "data": [
+        {
+          "text": "What\u0027s the answer?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "6f073323-03c7-4f35-88e8-722342a715a5",
+  "name": "answer_card",
+  "auto": true,
+  "contexts": [
+    "collection",
+    "cardData"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "collection",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "cardData",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@ease",
+          "name": "answer_ease",
+          "value": "",
+          "prompts": [
+            "The answer was #cardData.answer. Was that easy, medium, or hard?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "collection",
+          "value": "#collection.collection_name",
+          "prompts": []
+        },
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "card_id",
+          "value": "#cardData.id"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": ""
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

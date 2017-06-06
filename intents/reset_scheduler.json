@@ -1,0 +1,90 @@
+{
+  "userSays": [
+    {
+      "id": "ceda82db-7fa8-4416-b20b-87892abd4e88",
+      "data": [
+        {
+          "text": "reset my schedule"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9efcee6d-fdfd-4cff-9313-f727180045a1",
+      "data": [
+        {
+          "text": "reset scheduler"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8fe9734b-5748-4c14-afa6-962b0b92696e",
+      "data": [
+        {
+          "text": "reset schedule"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f51a16b8-f84f-4610-a5c9-40d3e63280f0",
+      "data": [
+        {
+          "text": "Reset my scheduler"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f5478950-15ed-40a4-8bc5-d3f8b0b5e510",
+      "data": [
+        {
+          "text": "Reset the scheduler"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "8a0abc45-939a-42ea-83e2-be9473f2143c",
+  "name": "reset_scheduler",
+  "auto": true,
+  "contexts": [
+    "collection"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "collection",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.any",
+          "name": "collection",
+          "value": "#collection.collection_name"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

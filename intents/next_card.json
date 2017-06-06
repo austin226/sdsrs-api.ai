@@ -1,0 +1,74 @@
+{
+  "userSays": [
+    {
+      "id": "6f636167-4585-4329-a494-001ea142f07c",
+      "data": [
+        {
+          "text": "Next card, please."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8e573f77-480e-47e8-b724-c7510e98f233",
+      "data": [
+        {
+          "text": "Next card"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3e973724-8f93-4c55-998c-2f66bc204837",
+      "data": [
+        {
+          "text": "What is my next card?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "c484b8c6-e18f-45f1-83ac-499a4350ba72",
+  "name": "next_card",
+  "auto": true,
+  "contexts": [
+    "collection"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "next_card-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "collection",
+          "value": "#collection.collection_name",
+          "prompts": [
+            "For which collection?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

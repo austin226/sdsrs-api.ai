@@ -1,0 +1,162 @@
+{
+  "userSays": [
+    {
+      "id": "855a53dc-efe1-4fe8-9dcc-d953495c722d",
+      "data": [
+        {
+          "text": "Use the collection "
+        },
+        {
+          "text": "states",
+          "alias": "collection_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "02c1c72a-2dfa-42c0-bf04-a5a25e9f6491",
+      "data": [
+        {
+          "text": "Study "
+        },
+        {
+          "text": "states",
+          "alias": "collection_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "861a5c34-3c77-423a-ae0f-2c529e0bd6f9",
+      "data": [
+        {
+          "text": "I want to study "
+        },
+        {
+          "text": "states",
+          "alias": "collection_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1fe4c448-34f4-4c86-b721-8ff0bacaccdf",
+      "data": [
+        {
+          "text": "I want to study the collection "
+        },
+        {
+          "text": "states",
+          "alias": "collection_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8aadae2a-4f78-49e8-ab9e-fe59415fcd73",
+      "data": [
+        {
+          "text": "Use a collection."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "1c458393-240d-4fd6-8bc6-b59823b1040a",
+      "data": [
+        {
+          "text": "I want to study."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8411b841-0d94-44c9-a1e1-811ce97fdf3a",
+      "data": [
+        {
+          "text": "Use "
+        },
+        {
+          "text": "states",
+          "alias": "collection_name",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "2ee635a4-3117-41c4-a0c6-bbecd5a0e6ca",
+  "name": "use_collection",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "collection",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "collection_name",
+          "value": "$collection_name",
+          "prompts": [
+            "Which collections would you like to study?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Selected collection: $collection_name"
+        },
+        {
+          "type": 0,
+          "speech": "Say \"next card\" or \"reset scheduler\" to begin studying."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

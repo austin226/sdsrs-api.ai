@@ -1,0 +1,34 @@
+{
+  "description": "SDSRS",
+  "language": "en",
+  "enabledDomainFeatures": [
+    "smalltalk-domain-new"
+  ],
+  "googleAssistant": {
+    "googleAssistantCompatible": false,
+    "project": "newagent-7440d",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2"
+  },
+  "defaultTimezone": "America/Barbados",
+  "webhook": {
+    "url": "http://aalmond.com/sdsrs/api.php",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.3
+}

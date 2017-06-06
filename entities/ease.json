@@ -1,0 +1,27 @@
+{
+  "id": "d160adbd-8a41-4f95-8249-028a95693c06",
+  "name": "ease",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "easy",
+      "synonyms": [
+        "easy"
+      ]
+    },
+    {
+      "value": "medium",
+      "synonyms": [
+        "medium"
+      ]
+    },
+    {
+      "value": "hard",
+      "synonyms": [
+        "hard"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

@@ -1,0 +1,202 @@
+{
+  "userSays": [
+    {
+      "id": "67af934f-3ba7-41ce-bc76-04ec02a3b124",
+      "data": [
+        {
+          "text": "Make a new card with front "
+        },
+        {
+          "text": "\"What is the capital of Alaska\"",
+          "alias": "front",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " and back "
+        },
+        {
+          "text": "\"Juneau\"",
+          "alias": "back",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a9450da9-e0d0-44c8-aa83-6a601d051511",
+      "data": [
+        {
+          "text": "I want to make a card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "638fcce9-9519-4165-990c-843f1e328d57",
+      "data": [
+        {
+          "text": "Make a card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6d502145-3355-41f1-a8b9-e5e46ffa2d1e",
+      "data": [
+        {
+          "text": "Create a new card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e60858a1-83a4-426b-ac7a-6aa5701670a9",
+      "data": [
+        {
+          "text": "Can I add a new card?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "48538595-525a-40e4-b31f-e182eeb54d55",
+      "data": [
+        {
+          "text": "I want to add a new card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "266b039d-0f57-4905-b9f7-57ed88000e9e",
+      "data": [
+        {
+          "text": "New card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ecb9f400-600a-4420-85ff-e77eb1279efb",
+      "data": [
+        {
+          "text": "Can I add another card?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "0dab7c75-8237-426b-8420-28a85b34a627",
+      "data": [
+        {
+          "text": "I have another card to add."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e26dc75f-5ff2-4fcf-b84d-c99f96be7d2f",
+      "data": [
+        {
+          "text": "Add a card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "bb682472-3b7d-4b1d-a76f-9538556d9b71",
+      "data": [
+        {
+          "text": "Add card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e2334f97-0b8a-47fd-b988-ec832d18e0f1",
+      "data": [
+        {
+          "text": "I want to add a card."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "e67cee34-395e-4c91-91d1-78a85fdcdf30",
+  "name": "add_card",
+  "auto": true,
+  "contexts": [
+    "collection"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "collection",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "front",
+          "value": "$front",
+          "prompts": [
+            "What should the front of the card say?",
+            "What will be on the front?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "back",
+          "value": "$back",
+          "prompts": [
+            "What is on the back?",
+            "What\u0027s on the back of the card?"
+          ]
+        },
+        {
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "collection",
+          "value": "#collection.collection_name",
+          "prompts": [
+            "Which collection do you want to add the card to?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

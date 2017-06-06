@@ -1,0 +1,87 @@
+{
+  "userSays": [
+    {
+      "id": "393413a9-11cf-4f3b-9b73-ca937f36f5f2",
+      "data": [
+        {
+          "text": "What collections are there?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d08bf18e-a560-47e3-9454-48a0d52bb031",
+      "data": [
+        {
+          "text": "What collections do I have?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a9a64af0-5268-46a6-b796-02fe91ca5179",
+      "data": [
+        {
+          "text": "Give me my collections."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7f676a0b-42e6-41a8-a008-749cdbcf4c31",
+      "data": [
+        {
+          "text": "List my collections."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "267c27b9-c8ee-4c9c-b69f-25839e6ebe12",
+      "data": [
+        {
+          "text": "List collections."
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2f6ac009-b860-4229-92b7-28042871e9f5",
+      "data": [
+        {
+          "text": "What are my collections?"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "3137af73-b712-40b5-bcd7-933a290202cf",
+  "name": "list_collections",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Here are your collections."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": []
+}
